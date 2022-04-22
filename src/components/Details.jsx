@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router';
 
 const Details = ({users}) => {
     const navigate = useNavigate()
@@ -21,9 +21,10 @@ const Details = ({users}) => {
     let companyName;
     let companyCatchPhrase;
     let CompanyBs;
+    
 
     users.forEach((user) => {
-        if(user.username === params.details) {
+        if(user.name === params.details) {
             name = user.name;
             username = user.username;
             phone = user.phone;

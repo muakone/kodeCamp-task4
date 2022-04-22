@@ -32,7 +32,7 @@ function App() {
              <h1>Users Info</h1>
               <div className='container'>
             {users.map((user, index) => (
-              <Cards key={index} user={user} index={index} showDetails={showDetails} code={user.username} />
+              <Cards key={index} user={user} index={index} showDetails={showDetails} code={user.name} />
             ))}
             </div>
            </div>
