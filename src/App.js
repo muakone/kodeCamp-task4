@@ -8,9 +8,11 @@ import Details from './components/Details';
 function App() {
   const [users, setUser] = useState([])
   const navigate = useNavigate()
+
   useEffect (() => {
     handleSubmit()
   }, [])
+
   const handleSubmit = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
@@ -19,6 +21,7 @@ function App() {
       setUser(data)
     })  
   }
+  
   const showDetails = (code) => {
     navigate(`/${code}`)
   }
