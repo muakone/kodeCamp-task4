@@ -50,6 +50,13 @@
     margin-top: 20px;
     margin-left: 10px;
 }
+.info-container h3 {
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+.card-title h2 {
+    font-weight: 400;
+}
 
 @media(max-width: 768px) {
     .general-info {
@@ -58,7 +65,14 @@
     }
 }
 @media(max-width: 425px) {
+    .container {
+        margin: 0;
+        margin-left: 20px;
+    }
     .general-info {
         grid-template-columns: auto;
+    }
+    .card {
+        width: 50em;
     }
 }
